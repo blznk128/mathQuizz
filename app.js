@@ -1,3 +1,32 @@
+//buttons that show add, subtract, divide, multiply
+$('#addButton').on('click', function() {
+    $('#addContainer').show();
+    $('#subContainer').hide();
+    $('#multiContainer').hide();
+    $('#divideContainer').hide();
+});
+
+$('#subButton').on('click', function() {
+    $('#addContainer').hide();
+    $('#subContainer').show();
+    $('#multiContainer').hide();
+    $('#divideContainer').hide();
+});
+
+$('#multiButton').on('click', function() {
+    $('#addContainer').hide();
+    $('#multiContainer').show();
+    $('#subContainer').hide();
+    $('#divideContainer').hide();
+});
+
+$('#divideButton').on('click', function() {
+    $('#addContainer').hide();
+    $('#divideContainer').show();
+    $('#multiContainer').hide();
+    $('#subContainer').hide();
+});
+
 // determines the math problem
     let int1 = Math.floor((Math.random() * 11) +1);
     let int2 = Math.floor((Math.random() * 11) +1);
@@ -19,30 +48,20 @@
     let int18 = Math.floor((Math.random() * 11) +1);
     let int19 = Math.floor((Math.random() * 11) +1);
     let int20 = Math.floor((Math.random() * 11) +1);
-   
-//determines the answers
-    let total = int1 + int2;
-    let toatalTwo = int3 + int4;
-    let totalThree = int5 + int6;
-    let toatalFour = int7 + int8;
-    let totalFive = int9 + int10;
-    let toatalSix = int11 + int12;
-    let totalSeven = int13 + int14;
-    let toatalEight = int15 + int16;
-    let totalNine = int17 + int18;
-    let toatalTen = int19 + int20;
 
 //sets the numbers to the screen
-    $('#testing').append(int1 + " " + " + " + int2 + " = " + "<input id = 'problemOne'></input>");
-    $('#testing').append('<br>' + int3 + " " + " + " + int4 + " = " + "<input id = 'problemTwo'></input>");
-    $('#testing').append('<br>' + int5 + " " + " + " + int6 + " = " + "<input id = 'problemThree'></input>");
-    $('#testing').append('<br>' + int7 + " " + " + " + int8 + " = " + "<input id = 'problemFour'></input>");
-    $('#testing').append('<br>' + int9 + " " + " + " + int10 + " = " + "<input id = 'problemFive'></input>");
-    $('#testing').append('<br>' + int11 + " " + " + " + int12 + " = " + "<input id = 'problemSix'></input>");
-    $('#testing').append('<br>' + int13 + " " + " + " + int14 + " = " + "<input id = 'problemSeven'></input>");
-    $('#testing').append('<br>' + int15 + " " + " + " + int16 + " = " + "<input id = 'problemEight'></input>");
-    $('#testing').append('<br>' + int17 + " " + " + " + int18 + " = " + "<input id = 'problemNine'></input>");
-    $('#testing').append('<br>' + int19 + " " + " + " + int20 + " = " + "<input id = 'problemTen'></input>");
+    $('#addition').append(int1 + " " + " + " + int2 + " = " + "<input id = 'problemOne'></input>");
+    $('#addition').append('<br>' + int3 + " " + " + " + int4 + " = " + "<input id = 'problemTwo'></input>");
+    $('#addition').append('<br>' + int5 + " " + " + " + int6 + " = " + "<input id = 'problemThree'></input>");
+    $('#addition').append('<br>' + int7 + " " + " + " + int8 + " = " + "<input id = 'problemFour'></input>");
+    $('#addition').append('<br>' + int9 + " " + " + " + int10 + " = " + "<input id = 'problemFive'></input>");
+    $('#addition').append('<br>' + int11 + " " + " + " + int12 + " = " + "<input id = 'problemSix'></input>");
+    $('#addition').append('<br>' + int13 + " " + " + " + int14 + " = " + "<input id = 'problemSeven'></input>");
+    $('#addition').append('<br>' + int15 + " " + " + " + int16 + " = " + "<input id = 'problemEight'></input>");
+    $('#addition').append('<br>' + int17 + " " + " + " + int18 + " = " + "<input id = 'problemNine'></input>");
+    $('#addition').append('<br>' + int19 + " " + " + " + int20 + " = " + "<input id = 'problemTen'></input>");
+
+
 
 //users clicks done, calculates correct and wrong answers
 $('#done').on('click', function() {
@@ -130,16 +149,16 @@ $('#done').on('click', function() {
 $("#reset").on('click', function() {
     // event.preventDefault()
     console.log('hi')
-    $('#ans1').val('');
-    $('#ans2').val('');
-    $('#ans3').val('');
-    $('#ans4').val('');
-    $('#ans5').val('');
-    $('#ans6').val('');
-    $('#ans7').val('');
-    $('#ans8').val('');
-    $('#ans9').val('');
-    $('#ans10').val('');
+    $('#problemOne').val('');
+    $('#problemTwo').val('');
+    $('#problemThree').val('');
+    $('#problemFour').val('');
+    $('#problemFive').val('');
+    $('#problemSix').val('');
+    $('#problemSeven').val('');
+    $('#problemEight').val('');
+    $('#problemNine').val('');
+    $('#problemTen').val('');
 })
 
 // start()

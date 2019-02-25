@@ -1,6 +1,7 @@
 h1 {
     text-align: center;
     font-size: 65px;
+    color: orangered
     
 }
 
@@ -10,4 +11,20 @@ h1 {
 
 #addContainer, #subContainer, #divideContainer, #multiContainer {
     display: none;
+    text-align: center;
+    color: orangered;
+}
+
+body {
+    background: url(http://www.jsitel.com/wp/wp-content/uploads/2015/02/bigstock-Numbers-background-25125038-e1436996262811.jpg)
+}
+
+button {
+    background-color: blueviolet; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
 }
